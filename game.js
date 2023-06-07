@@ -11,6 +11,13 @@ $("body").keydown(function (key) {
   }
 });
 
+$("h1").click(function(){
+    if(!started){
+      nextSequence();
+      started = true;
+    }
+});
+
 $(".btn").click(function () {
   var userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
