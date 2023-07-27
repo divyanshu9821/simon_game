@@ -54,7 +54,7 @@ function checkAnswer(current) {
   if (userClickedPattern[current] !== gamePattern[current]) {
     playSound("wrong");
     $("body").addClass("game-over");
-    $("#level-title").text("Game Over! Press A key to Start");
+    $("#level-title").text("Game Over! Click here to Start");
 
     setTimeout(() => {
       $("body").removeClass("game-over");
